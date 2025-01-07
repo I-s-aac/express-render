@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index.html</title>
-    <script defer src="index.js"></script>
+    <script defer src="index.js" type="module"></script>
   </head>
   <body>
     <h1>hello</h1>
     <div id="dateContainer"></div>
-    <form action="" method="post">
+    <form action="addPerson" method="post" id="addPersonForm">
       <h2>add a person</h2>
       <input id="firstName" name="firstName" placeholder="first name" />
       <input id="lastName" name="lastName" placeholder="last name" />
-      <input type="submit" value="add" />
+      <input type="submit" value="add" id="addPersonButton"/>
     </form>
     <form action="" method="post">
       <h2>search</h2>
@@ -24,6 +24,7 @@
       />
       <input type="submit" value="search" />
     </form>
+    <div id="searchOutput"></div>
     <h2>people</h2>
     <div id="peopleContainer"></div>
   </body>
