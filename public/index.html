@@ -4,9 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index.html</title>
+    <script defer src="index.js"></script>
   </head>
   <body>
-    <h4>hello</h4>
-    <img src="images/oranges.png" />
+    <h1>hello</h1>
+    <div id="dateContainer"></div>
+    <form action="" method="post">
+      <h2>add a person</h2>
+      <input id="firstName" name="firstName" placeholder="first name" />
+      <input id="lastName" name="lastName" placeholder="last name" />
+      <input type="submit" value="add" />
+    </form>
+    <form action="" method="post">
+      <h2>search</h2>
+      <input
+        id="searchInput"
+        name="searchInput"
+        placeholder="search by first name"
+      />
+      <input type="submit" value="search" />
+    </form>
+    <h2>people</h2>
+    <div id="peopleContainer"></div>
   </body>
 </html>
